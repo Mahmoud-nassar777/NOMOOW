@@ -1,0 +1,98 @@
+{
+    "cards": [
+      {
+        "id": "completedOrdersChart",
+        "title": "الطلبات المكتملة",
+        "type": "completed",
+        "icon": "bi-check-circle-fill",
+        "value": "89,620",
+        "trendIcon": "bi-arrow-up",
+        "trendText": "2% زيادة في آخر شهر",
+        "chartData": {
+          "labels": ["", "", "", "", "", "", ""],
+          "datasets": [{
+            "data": [20, 35, 45, 30, 50, 40, 35],
+            "backgroundColor": [
+              "rgba(88, 41, 121, 0.3)",
+              "rgba(88, 41, 121, 0.4)",
+              "rgba(88, 41, 121, 0.6)",
+              "rgba(88, 41, 121, 0.5)",
+              "rgba(88, 41, 121, 0.7)",
+              "rgba(88, 41, 121, 0.4)",
+              "rgba(88, 41, 121, 0.5)"
+            ],
+            "borderColor": [
+              "rgba(88, 41, 121, 0.8)",
+              "rgba(88, 41, 121, 0.9)",
+              "rgba(88, 41, 121, 1)",
+              "rgba(88, 41, 121, 0.9)",
+              "rgba(88, 41, 121, 1)",
+              "rgba(88, 41, 121, 0.9)",
+              "rgba(88, 41, 121, 0.9)"
+            ],
+            "borderWidth": 1,
+            "borderRadius": 4
+          }]
+        }
+      },
+      {
+        "id": "activeOrdersChart",
+        "title": "الطلبات النشطة",
+        "type": "active",
+        "icon": "bi-arrow-repeat",
+        "value": "3,000",
+        "trendIcon": "bi-arrow-up",
+        "trendText": "2% زيادة في آخر شهر",
+        "chartData": {
+          "labels": ["", "", "", "", "", "", ""],
+          "datasets": [{
+            "data": [15, 25, 20, 35, 30, 40, 35],
+            "borderColor": "rgba(88, 41, 121, 1)",
+            "backgroundColor": "rgba(88, 41, 121, 0.2)",
+            "borderWidth": 2,
+            "fill": true,
+            "tension": 0.4,
+            "pointRadius": 0,
+            "pointHoverRadius": 4
+          }]
+        }
+      },
+      {
+        "id": "revenueChart",
+        "title": "إيرادات اليوم",
+        "type": "revenue",
+        "icon": "bi-calendar-check",
+        "value": "11,865",
+        "trendIcon": "bi-arrow-up",
+        "trendText": "2% زيادة في آخر شهر",
+        "chartData": {
+          "labels": ["", "", "", "", "", "", ""],
+          "datasets": [{
+            "data": [15, 25, 20, 30, 20, 25, 15],
+            "backgroundColor": [
+              "rgba(88, 41, 121, 0.3)",
+              "rgba(88, 41, 121, 0.4)",
+              "rgba(88, 41, 121, 0.35)",
+              "rgba(88, 41, 121, 0.6)",
+              "rgba(88, 41, 121, 0.35)",
+              "rgba(88, 41, 121, 0.4)",
+              "rgba(88, 41, 121, 0.3)"
+            ],
+            "borderColor": "rgba(88, 41, 121, 0.8)",
+            "borderWidth": 1,
+            "borderRadius": {
+              "topLeft": 6,
+              "topRight": 6,
+              "bottomLeft": 0,
+              "bottomRight": 0
+            },
+            "barThickness": 6,
+            "maxBarThickness": 8,
+            "categoryPercentage": 0.6,
+            "barPercentage": 0.8
+          }]
+        }
+      }
+    ]
+  }
+  

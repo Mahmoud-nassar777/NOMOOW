@@ -1,0 +1,31 @@
+{
+    "websites": [
+      { "name": "جوجل", "traffic": 85 },
+      { "name": "يوتيوب", "traffic": 70 },
+      { "name": "إنستغرام", "traffic": 60 },
+      { "name": "بينتيريست", "traffic": 45 },
+      { "name": "فيسبوك", "traffic": 55 },
+      { "name": "تويتر", "traffic": 40 }
+    ],
+    "labels": ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو"],
+    "datasets": [
+      {
+        "label": "خط 1",
+        "data": [5, 12, 8, 15, 25, 15, 18],
+        "borderColor": "rgba(88, 41, 121, 1)",
+        "backgroundColor": "rgba(88, 41, 121, 0.2)",
+        "borderWidth": 2,
+        "fill": true
+      },
+      {
+        "label": "خط 2",
+        "data": [5, 9, 20, 5, 12, 18, 28],
+        "borderColor": "rgba(88, 41, 121, 1)",
+        "backgroundColor": "transparent",
+        "borderWidth": 2,
+        "borderDash": [5, 5],
+        "fill": false
+      }
+    ]
+  }
+  
