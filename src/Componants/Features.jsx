@@ -2,11 +2,27 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import featuresData from "../Data/Features.json";
 
+// استيراد الصور من assets
+import card1 from "../assets/card-1.png";
+import card2 from "../assets/card-2.png";
+import card3 from "../assets/card-3.png";
+
+const imagesMap = {
+    card1,
+    card2,
+    card3,
+};
+
 const Features = () => {
     const [features, setFeatures] = useState([]);
 
     useEffect(() => {
-        setFeatures(featuresData);
+        // استبدال المفتاح في JSON بمسار الصورة الحقيقي
+        const dataWithImages = featuresData.map((item) => ({
+            ...item,
+            img: imagesMap[item.img],
+        }));
+        setFeatures(dataWithImages);
     }, []);
 
     return (

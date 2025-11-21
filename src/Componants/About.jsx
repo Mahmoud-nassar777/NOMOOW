@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
+import featureImg1 from "../assets/features-1.png";
+import featureImg2 from "../assets/features-2.png";
+
 const About = () => {
     return (
         <section id="about" className="about-section py-5">
@@ -41,7 +44,7 @@ const About = () => {
 
                             <div className="feature-card primary-card">
                                 <img
-                                    src="../src/assets/features-1.png"
+                                    src={featureImg1}
                                     alt="اختيار الثيم المناسب"
                                     className="feature-img"
                                 />
@@ -50,7 +53,7 @@ const About = () => {
 
                             <div className="feature-card secondary-card">
                                 <img
-                                    src="../src/assets/features-2.png"
+                                    src={featureImg2}
                                     alt="منصة تجارة إلكترونية احترافية"
                                     className="feature-img"
                                 />

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import faqData from "../Data/Faq.json";
 
+// استيراد الصورة
+import qaImg from "../assets/qa.png";
+
 const Faq = () => {
     const [selected, setSelected] = useState(1);
 
@@ -50,7 +53,7 @@ const Faq = () => {
                         <div className="faq-support-card">
 
                             <div className="support-illustration">
-                                <img src="../src/assets/qa.png" alt="فريق الدعم" />
+                                <img src={qaImg} alt="فريق الدعم" />
                             </div>
 
                             <div className="support-content">

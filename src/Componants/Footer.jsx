@@ -2,6 +2,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
+// استيراد الصور
+import logoWhite from '../assets/logo-white.png';
+import saudiBusiness from '../assets/saudi_business 1.png';
+
 const Footer = () => {
     return (
         <footer className="site-footer">
@@ -9,7 +13,7 @@ const Footer = () => {
                 <Row className="m-auto footer-top">
                     <Col lg={4} md={12} className="mb-4 mb-lg-0">
                         <div className="footer-brand">
-                            <img src="/src/assets/logo-white.png" alt="شعار نمو" className="footer-logo" />
+                            <img src={logoWhite} alt="شعار نمو" className="footer-logo" />
                             <p>منصة خمسة أيام هي بوابتك لعالم التجزئة الحديث</p>
                             <div className="footer-social d-flex justify-content-start justify-content-lg-start">
                                 <a href="#"><i className="bi bi-facebook"></i></a>
@@ -18,7 +22,7 @@ const Footer = () => {
                                 <a href="#"><i className="bi bi-youtube"></i></a>
                             </div>
                             <div className="footer-partner">
-                                <img src="../src/assets/saudi_business 1.png" alt="المركز السعودي للأعمال" />
+                                <img src={saudiBusiness} alt="المركز السعودي للأعمال" />
                             </div>
                         </div>
                     </Col>

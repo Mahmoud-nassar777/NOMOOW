@@ -3,6 +3,9 @@ import React from 'react';
 import { Navbar, Container, Nav as RBNav, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
+import logo from "../assets/logo-white.png";
+
+
 const Nav = () => {
     const navigate = useNavigate();
 
@@ -31,7 +34,7 @@ const Nav = () => {
                 <div className="navbar-container">
                     <div className="d-flex justify-between ">
                         <a className="navbar-brand ml-auto" href="#">
-                            <img src="/src/assets/logo-white.png" alt="شعار Nomow" className="logo-img" />
+                            <img src={logo} alt="شعار Nomow" className="logo-img" />
                         </a>
 
                         <div className="d-flex align-items-center mobile-login">

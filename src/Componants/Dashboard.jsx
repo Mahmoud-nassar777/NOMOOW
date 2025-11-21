@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
+// استيراد الصورة بطريقة Vite/React
+import dashboardImg from "../assets/dashboard.png";
+
 const Dashboard = () => {
     return (
         <section className="dashboard-section py-5">
@@ -11,7 +14,7 @@ const Dashboard = () => {
                     <Col lg={5} md={12} className="order-2 order-lg-1">
                         <div className="dashboard-image-wrapper">
                             <img
-                                src="../src/assets/dashboard.png"
+                                src={dashboardImg}
                                 alt="لوحة القيادة الرقمية"
                                 className="dashboard-main-img img-fluid"
                             />
